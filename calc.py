@@ -37,7 +37,7 @@ if __name__ == "__main__":
         operacion = sys.argv[2]
         numero2 = sys.argv[3]
     except IndexError:
-        sys.exit("Error: Has metido parámetros de menos")
+        sys.exit("Error: Has metido un número de parámetros erroneo")
     try:
         num1 = numerical_float(numero1)
         num2 = numerical_float(numero2)
