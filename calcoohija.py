@@ -23,7 +23,7 @@ class CalculadoraHija(Calculadora):
         try:
             return num1 / num2
         except ZeroDivisionError:
-            sys.exit("Error: Division por cero")
+            sys.exit("Division by zero is not allowed")
 
 
 def main():
