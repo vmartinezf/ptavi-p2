@@ -23,17 +23,24 @@ def resta(rest1, rest2):
     return rest1 - rest2
 
 
-if __name__ == "__main__":
-    numero1 = sys.argv[1]
-    operacion = sys.argv[2]
-    numero2 = sys.argv[3]
+def resultado(operacion, num1, num2):
+    if (operacion == "suma"):
+        result = suma(num1, num2)
+    elif (operacion == "resta"):
+        result = resta(num1, num2)
+    return result
 
+
+if __name__ == "__main__":
+    try:
+        numero1 = sys.argv[1]
+        operacion = sys.argv[2]
+        numero2 = sys.argv[3]
+    except IndexError:
+        sys.exit("Error: Has metido parámetros de menos")
     try:
         num1 = numerical_float(numero1)
         num2 = numerical_float(numero2)
     except ValueError:
         sys.exit("Error: Non numerical parameters")
-    if (operacion == "suma"):    
-        print (suma(num1, num2))
-    elif (operacion == "resta"):
-        print (resta(num1, num2))
+    print (resultado(operacion, num1, num2))
