@@ -34,3 +34,4 @@ if __name__ == "__main__":
                 elif (operacion == "divide"):
                     numero = result.division(numero, num2)
             print (numero)      
+    fich.close()
