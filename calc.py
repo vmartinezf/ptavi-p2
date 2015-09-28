@@ -1,30 +1,38 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+# Vamos a programar una calculadora
+
 import sys
 
+def main():
+    pass
 
-def plus(op1, op2):
-    """ Function to sum the operands """
-    return op1 + op2
+#convierto el operando sea int o float a float
+def numerical_float (operando):
+    return float(operando)
+ 
 
+def suma (sum1, sum2):
+    return sum1 + sum2
 
-def minus(op1, op2):
-    """ Function to substract the operands """
-    return op1 - op2
+def resta (rest1, rest2):
+	return rest1 - rest2
+
 
 if __name__ == "__main__":
+    
+    numero1 = sys.argv[1]
+    operacion = sys.argv[2]
+    numero2 = sys.argv[3]
+
     try:
-        operando1 = int(sys.argv[1])
-        operando2 = int(sys.argv[3])
+        num1 = numerical_float (numero1)
+        num2 = numerical_float (numero2)
     except ValueError:
         sys.exit("Error: Non numerical parameters")
-
-    if sys.argv[2] == "suma":
-        result = plus(operando1, operando2)
-    elif sys.argv[2] == "resta":
-        result = minus(operando1, operando2)
-    else:
-        sys.exit('Operación sólo puede ser sumar o restar.')
-
-    print result
+   
+    if (operacion == "suma"):    
+        print (suma(num1, num2))
+    elif (operacion == "resta"):
+        print (resta(num1, num2))
