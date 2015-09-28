@@ -49,7 +49,7 @@ if __name__ == "__main__":
         print (result.suma(num1, num2))
     elif (operacion == "resta"):
         print(result.resta(num1, num2))
-    elif (operacion == "multiplicacion"):
+    elif (operacion == "multiplica"):
         print(result.multiplicacion(num1, num2))
-    elif (operacion == "division"):
+    elif (operacion == "divide"):
         print (result.division(num1, num2))
