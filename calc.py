@@ -28,6 +28,8 @@ def resultado(operacion, num1, num2):
         result = suma(num1, num2)
     elif (operacion == "resta"):
         result = resta(num1, num2)
+    else:
+        sys.exit ("Error: the operation is incorrect")
     return result
 
 
@@ -37,7 +39,7 @@ if __name__ == "__main__":
         operacion = sys.argv[2]
         numero2 = sys.argv[3]
     except IndexError:
-        sys.exit("Error: Has metido un número de parámetros erroneo")
+        sys.exit("Error: The number of parameters is incorrect")
     try:
         num1 = numerical_float(numero1)
         num2 = numerical_float(numero2)
