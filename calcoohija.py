@@ -19,7 +19,7 @@ class CalculadoraHija(Calculadora):
     def multiplicacion(self, num1, num2):
         return num1 * num2
 
-    def division(self, num1, num2):  
+    def division(self, num1, num2):
         try:
             return num1 / num2
         except ZeroDivisionError:
@@ -30,14 +30,14 @@ def main():
     pass
 
 
-#convierto el operando sea int o float a float
+# convierto el operando sea int o float a float
 def numerical_float(operando):
     return float(operando)
 
 
 def resultado(operacion, num1, num2):
     result = CalculadoraHija()
-    if (operacion == "suma"):    
+    if (operacion == "suma"):
         total = result.suma(num1, num2)
     elif (operacion == "resta"):
         total = result.resta(num1, num2)
@@ -46,7 +46,7 @@ def resultado(operacion, num1, num2):
     elif (operacion == "divide"):
         total = result.division(num1, num2)
     else:
-        sys.exit ("Error: the operation is incorrect")
+        sys.exit("Error: the operation is incorrect")
     return total
 
 
