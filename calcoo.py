@@ -19,21 +19,20 @@ def main():
     pass
 
 
-#convierto el operando sea int o float a float
+# convierto el operando sea int o float a float
 def numerical_float(operando):
     return float(operando)
 
 
 def resultado(operacion, num1, num2):
     result = Calculadora()
-    if (operacion == "suma"):    
-        total=result.suma(num1, num2)
+    if (operacion == "suma"):
+        total = result.suma(num1, num2)
     elif (operacion == "resta"):
-        total=result.resta(num1, num2)
+        total = result.resta(num1, num2)
     else:
-        sys.exit ("Error: the operation is incorrect")
+        sys.exit("Error: the operation is incorrect")
     return total
-
 
 
 if __name__ == "__main__":
