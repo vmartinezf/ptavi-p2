@@ -10,7 +10,7 @@ def main():
     pass
 
 
-#convierto el operando sea int o float a float
+# convierto el operando sea int o float a float
 def numerical_float(operando):
     return float(operando)
 
@@ -29,7 +29,7 @@ def resultado(operacion, num1, num2):
     elif (operacion == "resta"):
         result = resta(num1, num2)
     else:
-        sys.exit ("Error: the operation is incorrect")
+        sys.exit("Error: the operation is incorrect")
     return result
 
 
