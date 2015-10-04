@@ -4,8 +4,6 @@
 
 import sys
 import csv
-from calcoohija import CalculadoraHija
-from calcoohija import numerical_float
 from calcplus import resultados_fichero
 
 
