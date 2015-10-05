@@ -6,10 +6,6 @@
 import sys
 
 
-def main():
-    pass
-
-
 # convierto el operando sea int o float a float
 def numerical_float(operando):
     return float(operando)
