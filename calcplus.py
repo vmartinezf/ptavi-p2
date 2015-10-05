@@ -8,10 +8,6 @@ from calcoohija import numerical_float
 from calcoohija import resultado
 
 
-def main():
-    pass
-
-
 def resultados_operaciones(lineas):
     for operandos in lineas:
             operando = operandos.split(',')
