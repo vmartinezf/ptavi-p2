@@ -7,10 +7,6 @@ import csv
 from calcplus import resultados_fichero
 
 
-def main():
-    pass
-
-
 if __name__ == "__main__":
     fichero = sys.argv[1]
     with open(fichero) as fich:
