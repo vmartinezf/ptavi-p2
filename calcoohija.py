@@ -26,10 +26,6 @@ class CalculadoraHija(Calculadora):
             sys.exit("Division by zero is not allowed")
 
 
-def main():
-    pass
-
-
 # convierto el operando sea int o float a float
 def numerical_float(operando):
     return float(operando)
